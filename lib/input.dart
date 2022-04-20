@@ -14,7 +14,17 @@ class _inputState extends State<input> {
       appBar: AppBar(
         title: Text("Data Input"),
         backgroundColor: Color(630000)
-      )
+      ),
+       body: Column(
+        children: <Widget>[
+          Padding(
+           padding: EdgeInsets.all(32),
+           child: TextField(
+            keyboardType:  TextInputType.text,
+         ),
+        )
+      ],
+     ),
     );
   }
 }
